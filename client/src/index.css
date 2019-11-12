@@ -5,15 +5,39 @@ body {
   background-color: #f2f2f2;
 }
 
+.movie-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+
+.movie-list a {
+  width: 33%;
+  text-decoration: none;
+  text-align: center;
+  color: #e0e0e0;
+}
+
 .movie-card {
-  background-color: #fff;
+  background-color: dodgerblue;
   border: 0;
+  border-radius: 5%;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
   padding: 1rem;
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+  height: 250px;
+}
+
+.movie-card h2{
+  color: darkblue;
+}
+
+.movie-card h3{
+  color: blue;
 }
 
 .movie-director {
@@ -22,7 +46,7 @@ body {
 }
 
 .saved-list {
-  background-color: #fff;
+  background-color: dodgerblue;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -55,18 +79,26 @@ body {
 }
 .save-button {
   position: absolute;
+  cursor: pointer;
   top: 25px;
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: lightskyblue;
 }
 .save-button:hover {
-  background-color: green;
+  background-color: blue;
   color: white;
 }
 
 .home-button {
   padding: 5px 10px;
+  border: 1px solid grey;
+  text-decoration: none;
   background-color: lightskyblue;
+}
+
+.home-button:hover{
+  background-color: blue;
+  color: white;
 }

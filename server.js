@@ -50,6 +50,13 @@ const movies = [
 		metascore: 89,
 		stars: ['Kurt Russell', 'Bill Paxton', 'Sam Elliot'],
 	},
+	{
+		id: 6,
+		title: "The Hunger Games",
+		director: 'Gary Ross',
+		metascore: 77,
+		stars: ['Jennifer Lawrence', 'Josh Hutcherson', 'Woody Harrelson'],
+	},
 ];
 
 app.get('/api/movies', (req, res) => {
